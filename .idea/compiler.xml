@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springbootstarterparent" />
+        <module name="spring-boot-starter-parent1" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-starter-parent1" options="-parameters" />
       <module name="springbootstarterparent" options="-parameters" />
     </option>
   </component>

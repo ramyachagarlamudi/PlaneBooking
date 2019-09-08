@@ -1,7 +1,8 @@
 #body {
-          background: url(/images/fiji_airways.jpg);
+          background: url(/images/fiji_airways.jpeg);
           background-repeat: no-repeat;
           background-size: 1450px 500px;
+          margin:50px;
          }
         select {
             width: 220px;

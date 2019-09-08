@@ -1,6 +1,7 @@
   $(document).ready(function(){
     $("#search-form").submit(function (event) {
          event.preventDefault();
+
          var search = {}
          search["source"] = $("#source").val();
          search["destination"]=$("#destination").val();
@@ -16,25 +17,32 @@
         cache: false,
         timeout: 600000,
         success: function (data) {
-        var json ="<h2>Flights Available Details</h2>"+"<h4>From Source "+$("#source").val()+" To Destination"+$("#destination").val()+"</h4>";
-           var  data1 = data;
-            console.log("data",data);
-          var obj = JSON.parse(JSON.stringify(data1));
-          var tmpclass=$("#selectedClass").val();
-          var passengers = $("#noOfPassenger").val();
-          var date =$("#flyDate").val();
-          var weekDay = new Date(date).getDay();
+        var json ="<h2>Flights Available Details</h2>"+"<h4>From Source "+$("#source").val()+" To Destination "+$("#destination").val()+"</h4>";
+           console.log("output",data);
+           drawTable(data);
+          function drawTable(data) {
+              for (var i = 0; i < data.length; i++) {
+                  drawRow(data[i]);
+              }
+          }
              $("#div1").html(json);
-             $("#forclass").html(tmpclass);
-             $("#forpassenger").html(passengers);
-             console.log(data1);
-             $("#fname").html(data.key);
-             $("#basefare").html(data.val[2]);
-             $("#forclass1").html(tmpclass);
-             $("#forpassenger1").html(passengers);
-             $("#fname1").html(data.key);
-             $("#basefare1").html(data.val[2]);
-            $("#btn-search").prop("disabled", false);
+          function drawRow(rowData) {
+              var row = $("<tr/>")
+              $("#flightDataTable").append(row);
+              row.append($("<td>" + rowData.flightName + "</td>"));
+               row.append($("<td>" + rowData.departureTime + "-"+ rowData.arrivalTime + "</td>"));
+              row.append($("<td>" + "Direct" + "</td>"));
+              row.append($("<td>" + $("#noOfPassenger").val() + "</td>"));
+              row.append($("<td>" + rowData.price+ "</td> </tr>"));
+              row.append($("<td> <button type= submit>View Deal</button>" + "</td>"));
+          }
+          function deleteRows(){
+            var i=1;
+               $("#flightDataTable td").each(function(e){
+               	if(i!=1) $(e).remove();
+               i++;
+               });
+          }
            },
         error: function (e) {
             var json = "<h4>Ajax Response</h4><pre>"
