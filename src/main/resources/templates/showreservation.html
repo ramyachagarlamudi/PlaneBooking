@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
 <head>
     <title>Flight Booking Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -7,11 +9,17 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-<script src="/main.js"></script><br> <font size="4">
-    <div  align="center" style="font-family:arial" >
-        <h1 align="Center" >Welcome To Travel Booking Website</h1>
-       <form id="body" id="search-form">
+<body>
+<div align="center" id="body">
+    <div id="tabs" align="center">
+        <ul >
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="css menus">Vapasi India</a></li>
+            <li><a href="/" title="css menus">Flights</a></li>
+            <li><a href="/showReservation" title="css menus">Show Reservation</a></li>
+        </ul>
+    </div>
+    <h2 align="Center" >Welcome To Travel Booking Website</h2>
+        <form id="search-form">
             <label>Source</label>
             <select id="source">
                 <option>Hyderabad</option>
@@ -43,13 +51,11 @@
             <input type="text" id="flyDate"/><script src="/date.js"></script>
             <br><br><button id="btn-search" type="submit" aria-setsize="3">Search Flights</button>
         </form>
-            <br>
-            <div id="div1"></div>
-            <table align="center" cellpadding="7" id="flightDataTable">
+        <br>
+        <div id="div1"></div>
+        <table align="center" cellpadding="7" id="flightDataTable">
 
-            </table>
-
-    </div>
-</font>
+        </table>
+</div>
 </body>
 </html>

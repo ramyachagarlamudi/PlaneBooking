@@ -1,9 +1,15 @@
 #body {
-          background: url(/images/fiji_airways.jpeg);
+          background: url(/images/fiji_airways.jpg);
           background-repeat: no-repeat;
-          background-size: 1450px 500px;
-          margin:50px;
+          background-size: 1500px 800px;
+          margin:50px;lo
+          align:center;
          }
+    #tabs{text-align:center; position: relative; display: inline-block;height:42px;font-size:14px;font-weight:bold;background:transparent;font-family:Arial;text-transform:uppercase;}
+    #tabs ul{text-align:center; position: relative;display: inline-block; margin:0px;padding:0;list-style-type:none;width:auto;}
+    #tabs ul li{display: inline-block;float:left;margin:0 1px 0 0;}
+    #tabs ul li a{display: inline-block;float:center;color:#0F1F0F;text-decoration:none;padding:14px 22px 0 22px;height:28px;}
+    #tabs ul li a:hover,#tabs ul li a.current{color:#0f0f0f;background:transparent center;}
         select {
             width: 220px;
             margin: 6px;
@@ -30,4 +36,18 @@
             margin: 10px;
             font-family:arial
             font-size : 15px;
+          }
+          table, td, th {
+            border: 2px ;
+          }
+
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            align: center;
+          }
+
+          td {
+            height: 50px;
+            vertical-align: bottom;
           }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flight Booking Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <div id="tabs" align="center">
+        <ul >
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+            <li><a href="/" title="Home">Flights</a></li>
+            <li><a href="/showReservation" title="Your Reservation ">Show Reservation</a></li>
+        </ul>
+    </div>
+    <h1 align="Center" >Confirm Travel Booking</h1>
+<table>
+    <tr>
+    <td th:text="${flight.flightName}"></td>
+    <td th:text="${flight.source}"></td>
+    <td th:text="${flight.destination}"></td>
+    <td th:text="${flight.departureDate}"></td>
+    <td th:text="${flight.departureTime}"></td>
+    <td th:text="${flight.arrivalTime}"></td>
+    <td th:text="${flight.SelectedClass}"></td>
+    <td th:text="${flight.passenger}"></td>
+    <td th:text="${flight.price}" ></td></tr>
+    <tr><form action="/confirmflight" modelAttribute="flight">
+    <tr> <td><b>Fill out passenger information</b></td></tr>
+    <tr> <td>Passenger Name<input type="text" name="fullName" id="fullname" /></td></tr>
+    <tr>  <td>Email<input type="text" name="email" id="email"/></td></tr>
+    <tr>  <td>Mobile Number<input type="text" name="mobileNumber" id="mobileNumber" maxlength="10"/></td></tr>
+    <tr> <td>Address<input type="text" name="address" id="address" /></td></tr>
+    <tr> <td><button name="submit" type="submit" >Click to Submit</button></td>  </tr>
+        </form>
+</table>
+</body>
+</html>

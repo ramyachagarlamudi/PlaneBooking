@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.*;
 public class FlightIndexController {
 
     @GetMapping("/")
-    public String search()
+    public String home()
     {
-        return "index";
+        return "home";
     }
-
 
 
 }

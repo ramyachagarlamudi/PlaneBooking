@@ -1,9 +1,9 @@
 package org.flightBooking.Services;
 
+import org.flightBooking.Models.Passenger;
+import org.flightBooking.Models.Reservations;
 import org.flightBooking.Models.ScheduledFlights;
-import org.flightBooking.Repository.FlightRepository;
-import org.flightBooking.Repository.ScheduledFlightsRepository;
-import org.flightBooking.Repository.ScheduledTravelClassRepository;
+import org.flightBooking.Repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
@@ -19,20 +19,31 @@ public class Service {
     @Autowired
     private ScheduledFlightsRepository scheduledFlightsRepository;
 
+    @Autowired
+    private PassengerRepository passengerRepository;
+
+    @Autowired
+    private ReservationRepository reservationRepository;
+
+    public  AvailableFlights selectedFlight(int sched_id,String flightName, String selectedClass, double price, int passenger){
+    ScheduledFlights selected = scheduledFlightsRepository.findById(sched_id).get();
+    return (new AvailableFlights(flightName,selected.getArrivalTime(),selected.getDepartureTime(),selected.getDepartureDate(),selected.getSource(),selected.getDestination(),selected.getFlightId(),selected.getSchedflightId(),price,selectedClass,passenger));
+   }
+
     public ArrayList<AvailableFlights> searchFlight(String source, String destination, int noOfPassengers, String flyDate, String selectedClass) {
         //getting related flights and scheduled flights
         List<ScheduledFlights> scheduledFlightsAll = scheduledFlightsRepository.findBySourceAndDestination(source, destination);
         ArrayList<AvailableFlights> flights = new ArrayList<AvailableFlights>();
         String flight_name; double price;
         if (scheduledFlightsAll.isEmpty()) {
-            flights.add(new AvailableFlights("No Flights are avaliable for ","","",0,0,0));
+            flights.add(new AvailableFlights("No Flights are avaliable for ","","","","","",0,0,0,"",0));
             return flights;
          }
         else {
             for (ScheduledFlights p : scheduledFlightsAll) {
                 price = scheFlightsClassRepository.findPriceForAvaliable(p.getSchedflightId(), selectedClass, noOfPassengers);
                 flight_name = flightRepository.findFlightName(p.getSchedflightId());
-                flights.add(new AvailableFlights(flight_name,p.getArrivalTime(),p.getDepartureTime(),p.getFlightId(), p.getSchedflightId(), price));
+                flights.add(new AvailableFlights(flight_name,p.getArrivalTime(),p.getDepartureTime(),p.getDepartureDate(),p.getSource(),p.getDestination(),p.getFlightId(), p.getSchedflightId(), price,selectedClass,noOfPassengers));
             }
             CalculatePrice calculatePrice = null;
             switch (selectedClass) { // switch case for the selected seat class and fare base on the class selected
@@ -50,6 +61,32 @@ public class Service {
         }
           return flights;
     }
-   }
+
+
+
+    public void addBooking(Object fullName, Object email, Object mobileNumber, Object address) {
+
+        System.out.println(fullName.toString());
+        passengerRepository.insertPassenger(fullName.toString(), email.toString(), mobileNumber.toString(), address.toString());
+    }
+
+
+    public int addReservation(int passengerId, int sched_id, String fullName, String flightName, String source, String destination, String departureTime, String arrivalTime, String departureDate, double price, String selectedClass) {
+       reservationRepository.insertReservation(passengerId,sched_id,fullName,flightName,source,destination,departureTime,arrivalTime,departureDate,selectedClass,price);
+       int reservation = reservationRepository.findReservationId(passengerId,fullName);
+        return reservation;
+    }
+
+    public Passenger getPassengerId(Object fullName, Object email) {
+      Passenger passenger=  passengerRepository.getPassenger(fullName.toString(),email.toString());
+      return passenger;
+    }
+
+    public Reservations getReservation(int reservationId) {
+        Optional<Reservations> reservation= reservationRepository.findById(reservationId);
+        return reservation.get();
+    }
+
+}
 
 
