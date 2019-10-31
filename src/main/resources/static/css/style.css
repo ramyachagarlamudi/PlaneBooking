@@ -1,7 +1,7 @@
 #body {
           background: url(/images/fiji_airways.jpg);
-          background-repeat: no-repeat;
-          background-size: 1500px 800px;
+          background-repeat: repeat;
+          background-size: 1500px 1000px;
           margin:50px;lo
           align:center;
          }
@@ -16,13 +16,19 @@
             font-family:arial
             font-size: 15px;
         }
+        #source, #destination,#reservationCode{
+            width: 220px;
+            margin: 6px;
+            font-family:arial
+            font-size: 15px;
+        }
         #noOfPassenger{
             width: 180px;
             margin: 10px;
             font-family:arial
             font-size: 15px;
             }
-        button{
+        #submit{
             width: 150px;
             height:30px;
             margin:50px;

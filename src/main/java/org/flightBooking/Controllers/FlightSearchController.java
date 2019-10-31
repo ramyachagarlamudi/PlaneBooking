@@ -6,15 +6,13 @@ import org.flightBooking.Services.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.stream.Collectors;
 
 @Controller
 public class FlightSearchController {
@@ -51,16 +49,24 @@ public class FlightSearchController {
         service.addBooking(session.getAttribute("fullName"),session.getAttribute("email"),session.getAttribute("mobileNumber"),session.getAttribute("address"));
         Passenger passenger = service.getPassengerId(session.getAttribute("fullName"),session.getAttribute("email"));
         AvailableFlights bookedflight = (AvailableFlights) session.getAttribute("flight");
-        int reservation_id = service.addReservation(passenger.getPassengerId(),bookedflight.getSched_id(), passenger.getFullName(), bookedflight.getFlightName(),session.getAttribute("source").toString(),session.getAttribute("destination").toString(),bookedflight.getDepartureTime(), bookedflight.getArrivalTime(),bookedflight.getDepartureDate(),bookedflight.getPrice(),bookedflight.getSelectedClass());
+        service.addReservation(passenger.getPassengerId(), bookedflight.getSched_id(), passenger.getFullName(), bookedflight.getFlightName(), session.getAttribute("source").toString(), session.getAttribute("destination").toString(), bookedflight.getDepartureTime(), bookedflight.getArrivalTime(), bookedflight.getDepartureDate(), bookedflight.getPrice(), bookedflight.getSelectedClass());
+        int reservation_id = service.getReservationId(passenger.getPassengerId(), passenger.getFullName());
         ModelAndView modelAndView = new ModelAndView("submitreservation");
         modelAndView.addObject("reservation",service.getReservation(reservation_id));
         return modelAndView;
     }
 
     @GetMapping("/showreservation")
-    public ModelAndView showReservation(@ModelAttribute Passenger passenger)    {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("passenger", passenger);
+    public ModelAndView showReservation(int reservationCode) {
+        ModelAndView modelAndView = new ModelAndView("showreservation");
+        try {
+            if (service.getReservation(reservationCode) == null) {
+                modelAndView = new ModelAndView("checkreservation");
+            } else
+                modelAndView.addObject("reservation", service.getReservation(reservationCode));
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         return modelAndView;
     }
 
@@ -68,8 +74,8 @@ public class FlightSearchController {
     public String search(HttpSession session, ModelMap map, @RequestParam(required = true) String source, @RequestParam(required = true) String destination, @RequestParam(required = false, defaultValue = "1") int noOfPassengers, @RequestParam(required = false, defaultValue = "2019-08-21") String flyDate, @RequestParam(required = true) String selectedClass) {
         ArrayList<AvailableFlights> flights = service.searchFlight(source, destination, noOfPassengers, flyDate, selectedClass);
         map.addAttribute("flightslist", flights);
-        session.setAttribute("source",source);
-        session.setAttribute("destination",destination);
+        session.setAttribute("source", source);
+        session.setAttribute("destination", destination);
         return "searchflights";
     }
 }

@@ -1,51 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94a9ee86-f8df-4752-9f08-af67f2d839aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/Passenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/Reservations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/PassengerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/ReservationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/fiji_airways.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/confirmflight.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/searchflights.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/selectflight.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/showreservation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/submitReservation.html" afterDir="false" />
+    <list default="true" id="94a9ee86-f8df-4752-9f08-af67f2d839aa" name="Default Changelist" comment="flight booking">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/checkreservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightIndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/AjaxResponseBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/AjaxResponseBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/AvailableFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/AvailableFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/PassengerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/PassengerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/ReservationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/fiji_airways.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/flights.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/confirmflight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/searchflights.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/searchflights.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/selectflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/selectflight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/showreservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/showreservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/submitReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/submitReservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightIndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightIndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightSearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/AvailableFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/AvailableFlights.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/fiji_airways.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/fiji_airways.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/fiji_airways.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/welcome.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="springbootstarterparent1" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,13 +62,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.flightBooking.Models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -87,8 +79,8 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.flightBooking.Repository" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.flightBooking.Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,7 +101,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.flightBooking.SpringBootApplicationMain" />
-      <module name="spring-boot-starter-parent1" />
+      <module name="spring-boot-starter-parent" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.flightBooking.*" />
@@ -166,7 +158,24 @@
     </configuration>
     <configuration name="spring-boot-starter-parent1" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
-        <option name="myGeneralSettings" />
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DEFAULT" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="threads" />
+            <option name="updateIndicesOnProjectOpen" value="true" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
         <option name="myRunnerSettings">
           <MavenRunnerSettings>
             <option name="delegateBuildToMaven" value="false" />
@@ -195,7 +204,7 @@
             <option name="profilesMap">
               <map />
             </option>
-            <option name="resolveToWorkspace" value="false" />
+            <option name="resolveToWorkspace" value="true" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
@@ -225,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567962903277</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="flight booking">
+      <created>1568436087699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568436087699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -245,8 +261,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="flight booking" />
     <option name="LAST_COMMIT_MESSAGE" value="flight booking" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

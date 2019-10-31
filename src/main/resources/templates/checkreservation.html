@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Flight Booking Application</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body id="body">
+<div align="center" id="tabs">
+    <ul>
+        <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+        <li><a href="/" title="Home">Flights</a></li>
+        <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
+    </ul>
+</div>
+<script src="main.js"></script>
+<form action="/search" align="center" method="GET">
+    <label>Source</label>
+    <input id="source" name="source" type="text">
+    <label> Destination</label>
+    <input id="destination" name="destination" type="text">
+    <br><br>
+    Departure Date
+    <input id="flyDate" name="flyDate" type="text"/>
+    <script src="/date.js"></script>
+    <label> Class</label>
+    <select id="selectedClass" name="selectedClass">
+        <option value="Economy">Economy</option>
+        <option value="FirstClass">FirstClass</option>
+        <option value="BusinessClass">BusinessClass</option>
+    </select><br>
+    <label>No Of Passengers</label>
+    <select id="noOfPassenger" name="noOfPassenger">
+        <option value="1">1</option>
+    </select><input type="submit" value="Submit">
+</form>
+<h4 align="Center">No Booked Flight Details are available. Please check your reservation code</h4>
+<div align="center" id="div1">
+    <form action="/showreservation">
+        <label>Enter Reservation Code</label>
+        <input id="reservationCode" name="reservationCode" type="text"/>
+        <button name="submit" type="submit">Find Reservation</button>
+    </form>
+</div>
+</body>
+</html>

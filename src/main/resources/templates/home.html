@@ -13,19 +13,16 @@
         <ul >
             <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
             <li><a href="/" title="Home">Flights</a></li>
-            <li><a href="/showReservation" title="Your Reservation ">Show Reservation</a></li>
+            <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
         </ul>
     </div>
     <h2 align="Center"  >Welcome To Travel Booking Website</h2><br>
+    <script src="main.js"></script>
     <form  action="/search"  method="GET" >
         <label>Source</label>
-        <select name="source" id="source">
-            <option value="Hyderabad">Hyderabad</option>
-            <option value="Chennai" >Chennai</option>
-            <option value="Delhi">Delhi</option>
-        </select> &nbsp; &nbsp;
+        <input id="source" name="source" type="text">
         <label> Destination</label>
-        <select name="destination" id="destination"><option>Bangalore</option></select>
+        <input id="destination" name="destination" type="text">
         <br><br>
         <label> Class</label>
         <select name="selectedClass" id="selectedClass">

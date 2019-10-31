@@ -7,49 +7,45 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-<script src="/main.js"></script><br> <font size="4">
-    <div  align="center" style="font-family:arial" >
-        <h1 align="Center" >Welcome To Travel Booking Website</h1>
-       <form id="body" id="search-form">
-            <label>Source</label>
-            <select id="source">
-                <option>Hyderabad</option>
-                <option>Chennai</option>
-                <option>Delhi</option>
-            </select> &nbsp; &nbsp;
-            <label> Destination</label>
-            <select id="destination"><option>Bangalore</option></select>
-            <br><br>
-            Class
-            <select id="selectedClass">
-                <option>Economy</option>
-                <option>FirstClass</option>
-                <option>BusinessClass</option>
-            </select>
-            <label>No Of Passengers</label>
-            <select id="noOfPassenger">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-            <br><br>Departure Date
-            <input type="text" id="flyDate"/><script src="/date.js"></script>
-            <br><br><button id="btn-search" type="submit" aria-setsize="3">Search Flights</button>
-        </form>
-            <br>
-            <div id="div1"></div>
-            <table align="center" cellpadding="7" id="flightDataTable">
-
-            </table>
-
+<body id="body">
+<div align="center">
+    <div align="center" id="tabs">
+        <ul>
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+            <li><a href="/" title="Home">Flights</a></li>
+            <li><a href="#" title="Your Reservation ">Show Reservation</a></li>
+        </ul>
     </div>
-</font>
+    <h2 align="Center">Welcome To Travel Booking Website</h2><br>
+    <script src="main.js"></script>
+    <form action="/search" method="GET">
+        <label>Source</label>
+        <input id="source" name="source" type="text">
+        <label> Destination</label>
+        <input id="destination" name="destination" type="text">
+        <br><br>
+        Departure Date
+        <input id="flyDate" name="flyDate" type="text"/>
+        <script src="/date.js"></script>
+        <label> Class</label>
+        <select id="selectedClass" name="selectedClass">
+            <option value="Economy">Economy</option>
+            <option value="FirstClass">FirstClass</option>
+            <option value="BusinessClass">BusinessClass</option>
+        </select><br>
+        <label>No Of Passengers</label>
+        <select id="noOfPassenger" name="noOfPassenger">
+            <option value="1">1</option>
+        </select><br><br><input type="submit" value="Submit">
+    </form>
+</div>
+<br>
+<div align="center" id="div1" style="border:7px;">
+    <form action="/showreservation">
+        <label>Enter Reservation Code</label>
+        <input id="reservationCode" name="reservationCode" type="text"/>
+        <button name="submit" type="submit">Find Reservation</button>
+    </form>
+</div>
 </body>
 </html>

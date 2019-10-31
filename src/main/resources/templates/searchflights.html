@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Flight Booking Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -14,19 +14,16 @@
         <ul >
             <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
             <li><a href="/" title="Home">Flights</a></li>
-            <li><a href="/showReservation" title="Your Reservation ">Show Reservation</a></li>
+            <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
         </ul>
     </div>
     <h2 align="Center" >Select Flights To Reach Destination</h2>
 <form  action="/search"  method="GET" >
     <label>Source</label>
-    <select name="source" id="source">
-        <option value="Hyderabad">Hyderabad</option>
-        <option value="Chennai" >Chennai</option>
-        <option value="Delhi">Delhi</option>
-    </select>
-    <label>Destination</label>
-    <select name="destination" id="destination"><option>Bangalore</option></select>
+    <input id="source" name="source" type="text">
+    <label> Destination</label>
+    <input id="destination" name="destination" type="text">
+    <br><br>
     Departure Date
     <input name="flyDate" type="text" id="flyDate"/><script src="/date.js"></script>
     <label> Class</label>
@@ -38,15 +35,6 @@
     <label>No Of Passengers</label>
     <select name="noOfPassenger" id="noOfPassenger">
         <option value="1" >1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option  value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
     </select>
 <input type="submit" value="Submit">
 </form>
@@ -64,5 +52,6 @@
     <td><a th:href="@{/selectflight?(sched_id=${flight.sched_id},flightName=${flight.flightName},selectedClass=${flight.selectedClass},price=${flight.price},passenger=${flight.passenger})}" >Select</a></td><br>
 </tr>
 </table>
+</div>
 </body>
 </html>
