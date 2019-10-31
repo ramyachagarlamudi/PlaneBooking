@@ -28,7 +28,8 @@
         <td th:text="${flight.arrivalTime}"></td>
         <td th:text="${flight.SelectedClass}"></td>
         <td th:text="${flight.passenger}"></td>
-        <td th:text="${flight.price}" ></td></tr>
+        <td th:text="${flight.price}"></td>
+    </tr>
     <tr><form action="/confirmflight" modelAttribute="flight">
     <tr>
         <td><b>Fill out one passenger information </b></td>
@@ -47,6 +48,7 @@
     </tr>
     <tr> <td><button name="submit" type="submit" >Click to Submit</button></td>  </tr>
     </form>
-</table></div>
+</table>
+</div>
 </body>
 </html>

@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94a9ee86-f8df-4752-9f08-af67f2d839aa" name="Default Changelist" comment="flight booking">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/checkreservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="94a9ee86-f8df-4752-9f08-af67f2d839aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightIndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightIndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Controllers/FlightSearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/PassengerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/PassengerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/ReservationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Repository/ReservationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Services/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/confirmflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/confirmflight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/searchflights.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/searchflights.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/selectflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/selectflight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/showreservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/showreservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/submitReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/submitReservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightIndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightIndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightSearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Controllers/FlightSearchController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Services/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/checkreservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/checkreservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/confirmflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/confirmflight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchflights.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchflights.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/selectflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/selectflight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/submitReservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/submitReservation.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +61,8 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.flightBooking.Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -79,8 +70,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.flightBooking.Repository" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.flightBooking.Models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -241,7 +233,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568436087699</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="flight booking">
+      <created>1572503483353</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572503483353</updated>
+    </task>
+    <task id="LOCAL-00004" summary="flight booking">
+      <created>1572503629579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572503629579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
