@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flight Booking Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+<div align="center" >
+    <div id="tabs" align="center">
+        <ul >
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+            <li><a href="/" title="Home">Flights</a></li>
+            <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
+        </ul>
+    </div>
+    <h2 align="Center" >Select Flights To Reach Destination</h2>
+<form  action="/search"  method="GET" >
+    <label>Source</label>
+    <input id="source" name="source" type="text">
+    <label> Destination</label>
+    <input id="destination" name="destination" type="text">
+    <br><br>
+    Departure Date
+    <input name="flyDate" type="text" id="flyDate"/><script src="/date.js"></script>
+    <label> Class</label>
+    <select name="selectedClass" id="selectedClass">
+        <option value="Economy">Economy</option>
+        <option value="FirstClass">FirstClass</option>
+        <option value="BusinessClass">BusinessClass</option>
+    </select><br>
+    <label>No Of Passengers</label>
+    <select name="noOfPassenger" id="noOfPassenger">
+        <option value="1" >1</option>
+    </select>
+<input type="submit" value="Submit">
+</form>
+<br><br>
+<table>
+<tr th:each="flight : ${flightslist}">
+    <td th:text="${flight.flightName}"></td>
+    <td th:text="${flight.source}"></td>
+    <td th:text="${flight.destination}"></td>
+    <td th:text="${flight.departureDate}"></td>
+    <td th:text="${flight.departureTime}"></td>
+    <td th:text="${flight.arrivalTime}"></td>
+    <td th:text="${flight.price}"></td>
+
+    <td><a th:href="@{/selectflight?(sched_id=${flight.sched_id},flightName=${flight.flightName},selectedClass=${flight.selectedClass},price=${flight.price},passenger=${flight.passenger})}" >Select</a></td><br>
+</tr>
+</table>
+</body>
+</html>

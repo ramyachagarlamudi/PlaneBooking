@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Flight Booking Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+<div align="center" >
+    <div id="tabs" align="center">
+        <ul >
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+            <li><a href="/" title="Home">Flights</a></li>
+            <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
+        </ul>
+    </div>
+    <h2 align="Center"  >Welcome To Travel Booking Website</h2><br>
+    <script src="main.js"></script>
+    <form  action="/search"  method="GET" >
+        <label>Source</label>
+        <input id="source" name="source" type="text">
+        <label> Destination</label>
+        <input id="destination" name="destination" type="text">
+        <br><br>
+        <label> Class</label>
+        <select name="selectedClass" id="selectedClass">
+            <option value="Economy">Economy</option>
+            <option value="FirstClass">FirstClass</option>
+            <option value="BusinessClass">BusinessClass</option>
+        </select>
+        <label>No Of Passengers</label>
+        <select name="noOfPassenger" id="noOfPassenger">
+            <option value="1" >1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option  value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br><br>Departure Date
+        <input name="flyDate" type="text" id="flyDate"/><script src="/date.js"></script>
+        <br><br><input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

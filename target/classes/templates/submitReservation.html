@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flight Booking Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+<div align="center">
+    <div align="center" id="tabs">
+        <ul>
+            <li><a href="https://www.thoughtworks.com/talktech/vapasi" title="Vapasi">Vapasi India</a></li>
+            <li><a href="/" title="Home">Flights</a></li>
+            <li><a href="/index" title="Your Reservation ">Show Reservation</a></li>
+        </ul>
+    </div>
+<h2 align="Center">Your Booked Flight Details</h2> <br>
+    <div align="center" style="font-family:arial"><h4>Thank your making reservation on our website. </h4>
+        <table>
+            <tr>
+                <td>Your Scheduled Flight Details</td>
+            </tr>
+        <tr>
+            <td th:text="${reservation.flightName}"></td>
+            <td th:text="${reservation.selectedClass}"></td>
+            <td th:text="${reservation.source}"></td>
+            <td th:text="${reservation.destination}"></td>
+            <td th:text="${reservation.departureDate}"></td>
+            <td th:text="${reservation.departureTime}"></td>
+            <td th:text="${reservation.arrivalTime}"></td>
+        </tr>
+            <tr>
+                <td>Passenger Details</td>
+            </tr>
+            <tr>
+                <td>Mr/Ms</td>
+                <td th:text="${reservation.fullName}"></td>
+            </tr>
+            <tr>
+                <td>Your reservation code is</td>
+                <td th:text="${reservation.reservationCode}"></td>
+            </tr>
+            <tr>
+                <td>Happy Journey!.</td>
+            </tr>
+        </table>
+</div>
+</body>
+</html>
