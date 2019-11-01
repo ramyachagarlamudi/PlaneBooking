@@ -34,7 +34,6 @@ public class ScheduledFlights {
     @Column(name = "TotalAvaliableSeats")
     private int totalAvaliableSeats;
 
-
     public int getTotalAvaliableSeats() {
         return totalAvaliableSeats;
     }
@@ -97,5 +96,16 @@ public class ScheduledFlights {
 
     public void setArrivalTime(String arrivalTime) {
         this.arrivalTime = arrivalTime;
+    }
+
+    public ScheduledFlights(int schedflightId, String source, String destination, String departureDate, String departureTime, String arrivalTime, int totalAvaliableSeats) {
+        this.schedflightId = schedflightId;
+        this.flightId = flightId;
+        this.source = source;
+        this.destination = destination;
+        this.departureDate = departureDate;
+        this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
+        this.totalAvaliableSeats = totalAvaliableSeats;
     }
 }

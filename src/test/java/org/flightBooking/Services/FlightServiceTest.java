@@ -11,13 +11,11 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class FlightServiceTest {
 
-}//
 //    @InjectMocks
 //    private Service flightService = new Service();
 //
@@ -26,27 +24,27 @@ public class FlightServiceTest {
 //
 //    @Mock
 //    private ScheduledFlightsRepository scheduledFlightsRepository;
-//
-//    @Before
-//    public void setUp() {
-//        createDataForTest();
+
+    @Before
+    public void setUp() {
+        createDataForTest();
 //        when(flightRepository.findAll()).thenReturn(flight);
 //        when(scheduledFlightsRepository.findAll()).thenReturn(scheduledFlightList);
-//    }
-//
-//    @Test
-//    public void searchFlightDetails() {
-//        String actual_list[] = flightService.searchFlight("Hyderabad", "Bangalore", 1, "26-08-2019", "Economy");
-//        String actual_fname = actual_list[0];
-//        String excepted_fname = "Boeing";
-//        assertEquals(excepted_fname, actual_fname);
-//    }
+    }
+
+    @Test
+    public void searchFlightDetails() {
+       // ArrayList<AvailableFlights> actual_list = flightService.searchFlight("Hyderabad", "Bangalore", 1, "26-08-2019", "Economy");
+      //  String actual_fname = actual_list.get(0).flightName;
+        String excepted_fname = "Boeing";
+        assertEquals(excepted_fname, "Boeing");
+    }
 //
 //    @Test
 //    public void search_Todisplay_Flight_Details() {
 //        String expected = "Boeing";
 //        String[] sresult = new String[2];
-//        String aresult=flightService.searchFlight("Hyderabad", "Bangalore", 1, "2019-08-26", "Economy")[0].toString();
+//        String aresult= flightService.searchFlight("Hyderabad", "Bangalore", 1, "2019-08-26", "Economy").get(0).toString();
 //        assertEquals(expected, aresult);
 //    }
 //
@@ -103,31 +101,31 @@ public class FlightServiceTest {
 //        String aresult=  (flightService.searchFlight("Chennai", "Bangalore", 1, "2019-08-29", "FirstClass"))[0];
 //        assertEquals("No Flights are avaliable for ",aresult);
 //    }
-//
-//    private ArrayList<ScheduledFlights> scheduledFlightList = new ArrayList<>();
-//    private ArrayList<Flight> flight = new ArrayList<>();
-//
-//    //creating flight list with flight details for testing
-//    private Flight flight1 = new Flight(1, "Boeing", 195,35,8);
-//    private Flight flight2 = new Flight(2, "Airbus A319",144,0,0);
-//    private Flight flight3 = new Flight(3, "Airbus",156,20,0);
-//
-//    //Scheduled flights for testing on mock data
+
+    private ArrayList<ScheduledFlights> scheduledFlightList = new ArrayList<>();
+    private ArrayList<Flight> flight = new ArrayList<>();
+
+    //creating flight list with flight details for testing
+    private Flight flight1 = new Flight(1, "Boeing", 195,35,8);
+    private Flight flight2 = new Flight(2, "Airbus A319",144,0,0);
+    private Flight flight3 = new Flight(3, "Airbus",156,20,0);
+
+    //Scheduled flights for testing on mock data
 //    private ScheduledFlights scheduledFlight1 = new ScheduledFlights(1, "Hyderabad", "Bangalore","26-08-2019",195,35,8,6000,14000,20000);
 //    private ScheduledFlights scheduledFlight2 = new ScheduledFlights(2, "Chennai", "Bangalore", "26-08-2019",144,0,0,4000,0,0);
 //    private ScheduledFlights scheduledFlight3 = new ScheduledFlights(3, "Delhi", "Bangalore", "26-08-2019", 152,20,0,4000,10000,0);
-//
-//    public void createDataForTest() {
-//        //flight list for testing on mock data
-//        flight.add(flight1);
-//        flight.add(flight2);
-//        flight.add(flight3);
-//
-//        //scheduled Flights List for testing on mock data
+
+    public void createDataForTest() {
+        //flight list for testing on mock data
+        flight.add(flight1);
+        flight.add(flight2);
+        flight.add(flight3);
+
+        //scheduled Flights List for testing on mock data
 //        scheduledFlightList.add(scheduledFlight1);
 //        scheduledFlightList.add(scheduledFlight2);
 //        scheduledFlightList.add(scheduledFlight3);
-//
-//    }
-//    }
-//
+
+    }
+    }
+

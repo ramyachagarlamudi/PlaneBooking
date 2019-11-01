@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.flightBooking.Services.FlightServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.197 s <<< FAILURE! - in org.flightBooking.Services.FlightServiceTest
-initializationError(org.flightBooking.Services.FlightServiceTest)  Time elapsed: 0.004 s  <<< ERROR!
-org.mockito.exceptions.base.MockitoException: 
-
-
-No tests found in FlightServiceTest
-Is the method annotated with @Test?
-Is the method public?
-
-Caused by: java.lang.reflect.InvocationTargetException
-Caused by: org.junit.runners.model.InitializationError
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.299 s - in org.flightBooking.Services.FlightServiceTest
