@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94a9ee86-f8df-4752-9f08-af67f2d839aa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/ScheduledFlights.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/ScheduledFlights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/ScheduledFlightsTravelClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/flightBooking/Models/ScheduledFlightsTravelClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data-postgres.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/flightBooking/Services/FlightServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/flightBooking/Services/FlightServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Models/ScheduledFlights.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Models/ScheduledFlights.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/date.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/date.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/searchflights.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/searchflights.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/selectflight.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/selectflight.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-boot-starter-parent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-boot-starter-parent-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.flightBooking.Services.FlightServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.flightBooking.Services.FlightServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.flightBooking.Services.FlightServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.flightBooking.Services.FlightServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/flightBooking/Services/FlightServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/flightBooking/Services/FlightServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/flightBooking/Models/ScheduledFlightsTravelClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/flightBooking/Models/ScheduledFlightsTravelClass.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -284,5 +270,16 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/flightBooking/Models/ScheduledFlights.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

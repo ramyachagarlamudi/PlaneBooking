@@ -108,4 +108,8 @@ public class ScheduledFlights {
         this.arrivalTime = arrivalTime;
         this.totalAvaliableSeats = totalAvaliableSeats;
     }
+
+    public ScheduledFlights() {
+
+    }
 }
